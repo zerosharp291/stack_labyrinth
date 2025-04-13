@@ -4,7 +4,7 @@
 
 int main() {
     std::ifstream ifs("labyrinth.txt");
-    lab maze = translator(ifs);
+    lab maze = labyrinth_from_file(ifs);
     ifs.close();
 
     print_labyrinth(maze);
