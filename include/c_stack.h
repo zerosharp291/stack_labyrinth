@@ -65,8 +65,12 @@ public:
         return value;
     }
 
-    node<T> *get_top() const {
-        return top;
+    T &get_top() const {
+        return top->info;
+    }
+
+    [[nodiscard]] bool empty() const {
+        return count == 0;
     }
 
     [[nodiscard]] int get_count() const { return count; }
