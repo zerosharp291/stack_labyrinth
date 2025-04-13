@@ -7,16 +7,21 @@
 #include <vector>
 #include <fstream>
 #include <sstream>
-#include <codecvt>
 #include <iostream>
-#include <vector>
-#include <fstream>
-#include <sstream>
 #include <string>
 #include <unordered_set>
+#include "../include/c_stack.h"
+#include <functional>
 
-using lab = std::vector<std::vector<bool> >;
-using pos = std::pair<unsigned int, unsigned int>;
+using lab = std::vector<std::vector<bool> >; // алиас для лабиринта
+using pos = std::pair<unsigned int, unsigned int>; // алиас для хранения позиции
+
+template<>
+struct std::hash<pos> {
+    size_t operator()(const pos &p) const noexcept {
+        return hash<unsigned>{}(p.first) ^ hash<unsigned>{}(p.second) << 1;
+    }
+};
 
 inline lab labyrinth_from_file(std::ifstream &l) {
     // функция транслирует лабиринт из файла в vector<vector<bool>> (alias lab)
@@ -59,5 +64,18 @@ inline void print_labyrinth(lab &v) {
 struct State {
     pos p; // координаты x, y
     std::vector<pos> path; // пройденный путь
-    std::unordered_set<pos> visited; // маркировка пройденных координат
+    std::unordered_set<int> visited; // маркировка пройденных координат
 };
+
+std::vector<pos> findAllPathsStack(
+    const lab &grid,
+    pos start,
+    pos end
+) {
+    const int N = grid.size();
+    const int M = grid[0].size();
+
+    std::vector<std::vector<pos> > all_paths;
+    c_stack<State> stack;
+    stack.push({start, {start},});
+}

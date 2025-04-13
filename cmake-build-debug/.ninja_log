@@ -1,5 +1,5 @@
 # ninja log v6
-13	470	7662639422422983	build.ninja	9b212e904bcf8ce0
+13	470	7662757816216455	build.ninja	9b212e904bcf8ce0
 55	597	7657335178703297	CMakeFiles/stack_labyrinth.dir/include/c_stack.cpp.obj	5c309f97e5e1c863
 4	768	7657355453112252	CMakeFiles/stack_labyrinth.dir/src/main.cpp.obj	eb7d07c9ab5b3cb6
 768	907	7657355460759747	stack_labyrinth.exe	453e9734a29a8605
