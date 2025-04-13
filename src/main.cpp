@@ -21,8 +21,8 @@ int main() {
     // c_stack_test(maze, pos(0,0));
     // std_stack_test(maze, pos(0,0));
 
-    std::cout << "Собственная реализация : " << measure_c_stack(maze, pos(0,0)) << " мкс."<< std::endl;
-    std::cout << "STL реализация : " << measure_std_stack(maze, pos(0,0)) << " мкс."<< std::endl;
+    std::cout << "Собственная реализация : " << measure_c_stack(maze, pos(0,0)) << " мс."<< std::endl;
+    std::cout << "STL реализация : " << measure_std_stack(maze, pos(0,0)) << " мс."<< std::endl;
     /* std::cout << "STL реализация : " << measure_std_stack_bin("maze.bin", 10000, 10000, pos(0, 0)) << " мкс." <<
             std::endl;*/
 

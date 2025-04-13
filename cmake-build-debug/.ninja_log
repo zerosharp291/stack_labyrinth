@@ -72,3 +72,10 @@
 1085	1121	7662871357315982	CMakeFiles/stack_labyrinth.dir/include/c_stack.cpp.obj.modmap	ab9494468d629d23
 1123	5871	7662871357692506	CMakeFiles/stack_labyrinth.dir/src/main.cpp.obj	c1097c53d55bfd32
 5871	6041	7662871405175622	stack_labyrinth.exe	5b2cecabe2a69ab8
+10	1065	7662873137793397	CMakeFiles/stack_labyrinth.dir/src/main.cpp.obj.ddi	48ad624e4812fc33
+1065	1103	7662873148346825	CMakeFiles/stack_labyrinth.dir/CXX.dd	ab9494468d629d23
+1065	1103	7662873148346825	C:/Users/zeros/CLionProjects/stack_labyrinth/cmake-build-debug/CMakeFiles/stack_labyrinth.dir/CXXModules.json	ab9494468d629d23
+1065	1103	7662873148346825	CMakeFiles/stack_labyrinth.dir/src/main.cpp.obj.modmap	ab9494468d629d23
+1065	1103	7662873148346825	CMakeFiles/stack_labyrinth.dir/include/c_stack.cpp.obj.modmap	ab9494468d629d23
+1105	5831	7662873148748896	CMakeFiles/stack_labyrinth.dir/src/main.cpp.obj	c1097c53d55bfd32
+5831	5999	7662873196006431	stack_labyrinth.exe	5b2cecabe2a69ab8
